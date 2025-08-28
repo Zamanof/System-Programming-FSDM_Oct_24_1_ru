@@ -37,3 +37,5 @@
 ProcessStartInfo process = new ProcessStartInfo("calc");
 
 Process.Start(process);
+
+Console.ReadLine();
