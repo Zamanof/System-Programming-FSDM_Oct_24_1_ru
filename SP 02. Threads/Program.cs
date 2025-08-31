@@ -9,16 +9,10 @@ Thread thread1 = new Thread(() =>
     //{
     //    Console.WriteLine($"\tMy Own Thread - Id:({Thread.CurrentThread.ManagedThreadId}) - {i} - IsBackground: {Thread.CurrentThread.IsBackground}");
     //}
-    ConsoleKey consoleKey = new();
     while (true)
     {
         Console.WriteLine(a);
         a++;
-        consoleKey = Console.ReadKey().Key;
-        if (consoleKey == ConsoleKey.Enter)
-        {
-            Thread.CurrentThread.Interrupt();
-        }
         Thread.Sleep(100);
         Console.Clear();
     }
