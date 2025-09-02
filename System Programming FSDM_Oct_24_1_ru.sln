@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP 03. ThreadPool", "SP 03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP 03. ThreadPool VS Thread", "SP 03. ThreadPool VS Thread\SP 03. ThreadPool VS Thread.csproj", "{3C65A4D2-6670-45CB-AF22-63D5EA136F6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SP 04", "SP 04", "{DDCD3139-447D-4389-9A2D-8C80FE610735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP 04. monitor lock", "SP 04. monitor lock\SP 04. monitor lock.csproj", "{3650E4D8-2DC8-40DA-9683-C912766F9C77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{3C65A4D2-6670-45CB-AF22-63D5EA136F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C65A4D2-6670-45CB-AF22-63D5EA136F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C65A4D2-6670-45CB-AF22-63D5EA136F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3650E4D8-2DC8-40DA-9683-C912766F9C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3650E4D8-2DC8-40DA-9683-C912766F9C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3650E4D8-2DC8-40DA-9683-C912766F9C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3650E4D8-2DC8-40DA-9683-C912766F9C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{7970BFD1-848B-4077-83AC-4DE22643548E} = {D9503B97-CA7D-4C63-AF5E-BBB6BF961166}
 		{725E6AB3-F2DC-4A02-92DA-3D670C6A875D} = {1E23A5C8-4E63-4AAF-941E-9A28BD8A8663}
 		{3C65A4D2-6670-45CB-AF22-63D5EA136F6D} = {1E23A5C8-4E63-4AAF-941E-9A28BD8A8663}
+		{3650E4D8-2DC8-40DA-9683-C912766F9C77} = {DDCD3139-447D-4389-9A2D-8C80FE610735}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63512BA3-066E-41B3-B697-217F6566FDE7}
