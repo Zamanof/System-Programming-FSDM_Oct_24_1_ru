@@ -129,47 +129,47 @@
 #endregion
 
 #region Monitor
-//Thread[] threads = new Thread[5];
-//object obj = new();
-//for (int i = 0; i < threads.Length; i++)
-//{
-//    threads[i] = new Thread(() =>
-//    {
-//        for (int j = 0; j < 1000000; j++)
-//        {
-//            Monitor.Enter(obj);
-//            try
-//            {
-//                Counter.count++;
+Thread[] threads = new Thread[5];
+object obj = new();
+for (int i = 0; i < threads.Length; i++)
+{
+    threads[i] = new Thread(() =>
+    {
+        for (int j = 0; j < 1000000; j++)
+        {
+            Monitor.Enter(obj);
+            try
+            {
+                Counter.count++;
 
-//                if (Counter.count % 2 == 0)
-//                {
-//                    Counter.even++;
-//                }
-//            }
-//            finally
-//            {
+                if (Counter.count % 2 == 0)
+                {
+                    Counter.even++;
+                }
+            }
+            finally
+            {
 
-//                Monitor.Exit(obj);
-//            }
+                Monitor.Exit(obj);
+            }
 
-//        }
-//    });
-//}
+        }
+    });
+}
 
-//for (int i = 0; i < threads.Length; i++)
-//{
-//    threads[i].Start();
-//}
+for (int i = 0; i < threads.Length; i++)
+{
+    threads[i].Start();
+}
 
-////Console.WriteLine(Counter.count);
-
-//for (int i = 0; i < threads.Length; i++)
-//{
-//    threads[i].Join();
-//}
 //Console.WriteLine(Counter.count);
-//Console.WriteLine(Counter.even);
+
+for (int i = 0; i < threads.Length; i++)
+{
+    threads[i].Join();
+}
+Console.WriteLine(Counter.count);
+Console.WriteLine(Counter.even);
 #endregion
 
 #region lock
